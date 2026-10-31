@@ -11,4 +11,12 @@ def addStudent():
 
     student_register.append(student)
 
-    print("Student details added to the Register successfully")    
+    print("Student details added to the Register successfully") 
+
+def viewStudentRecords():
+
+    if len(student_records) == 0:
+        print("Student Records is empty")
+        return
+
+    
