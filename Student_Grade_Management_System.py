@@ -1,5 +1,5 @@
 def addStudent():
-    name = int(input("Enter the Student name: "))
+    name = input("Enter the Student name: ")
     marks = []
     
     print("Enter the marks in PCM: ")
