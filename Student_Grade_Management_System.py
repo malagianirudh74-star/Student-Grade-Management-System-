@@ -19,4 +19,10 @@ def viewStudentRecords():
         print("Student Records is empty")
         return
 
+    print("-----STUDENT RECORDS-----")
+    print("NAME\tPHYSICS  MARKS\tCHEMISTRY MARKS\tMATHEMATICS MARKS")
+    for student in student_records:
+        print(f"{student['Name']}\t{student['Physics']}\t{student['Chemistry']}\t{student['Mathematics']}")
+
+
     
