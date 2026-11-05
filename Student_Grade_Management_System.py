@@ -24,5 +24,13 @@ def viewStudentRecords():
     for student in student_records:
         print(f"{student['Name']}\t{student['Physics']}\t{student['Chemistry']}\t{student['Mathematics']}")
 
+def calculateAverage():
+    if len(student_records) == 0:
+        print("No Student details found: ")
+        return
+    
+    found = 0
+    name = input("Enter the student name: ")
+
 
     
