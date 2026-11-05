@@ -32,5 +32,15 @@ def calculateAverage():
     found = 0
     name = input("Enter the student name: ")
 
+    for student in student_records:
+        if student['Name'] == name:
+            found = 1
+            avg = (student['Physics'] + student['Chemistry'] + student['Mathematics'])/3.0
+            print("Average PCM Marks: ",avg)
+            break
+
+    if found == 0:
+        print("Student not Found")
+
 
     
