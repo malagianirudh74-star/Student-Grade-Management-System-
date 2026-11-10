@@ -42,5 +42,36 @@ def calculateAverage():
     if found == 0:
         print("Student not Found")
 
+def assignGrades():
+    if len(student_records) == 0:
+        print("No student details found")
+        return
+
+    name = input("Enter the Student Name: ")
+
+    for student in student_records:
+        if student['Name'] == name:
+            if student['Average'] >= 90:
+                print("Grade: A")
+                break
+            elif student['Average'] >= 75:
+                print("Grade: B")
+                break
+            elif student['Average'] >= 60:
+                print("Grade: C")
+                break
+            elif student['Average'] >= 50:
+                print("Grade: D")
+                break
+            elif student['Average'] >= 35:
+                print("Pass")
+                break
+            else:
+                print("Fail")
+                break
+
+
+
+
 
     
