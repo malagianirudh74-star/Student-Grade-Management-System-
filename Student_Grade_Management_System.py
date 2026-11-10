@@ -37,7 +37,7 @@ def calculateAverage():
             found = 1
             avg = (student['Physics'] + student['Chemistry'] + student['Mathematics'])/3.0
             print("Average PCM Marks: ",avg)
-            
+            student["Average"] = avg
             break
 
     if found == 0:
