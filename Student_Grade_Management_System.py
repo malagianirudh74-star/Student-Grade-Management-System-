@@ -49,9 +49,16 @@ def assignGrades():
         return
 
     name = input("Enter the Student Name: ")
+    found = 0
 
     for student in student_records:
         if student['Name'] == name:
+            found = 1
+
+            if "Average" not in student:
+                print("Calculate the Average before")
+                break
+                
             if student['Average'] >= 90:
                 print("Grade: A")
                 break
@@ -70,8 +77,6 @@ def assignGrades():
             else:
                 print("Fail")
                 break
-
-
 
 
 
