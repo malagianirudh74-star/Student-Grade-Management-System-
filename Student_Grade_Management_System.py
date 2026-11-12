@@ -86,6 +86,14 @@ def searchStudent():
         if student['Name'] == name:
             found = 1
 
+            print("Student Found")
+
+            print("-----STUDENT DETAILS-----")
+            for key,value in student.items():
+                print(key,": ",value)
+
+            break
+
 
 
     
