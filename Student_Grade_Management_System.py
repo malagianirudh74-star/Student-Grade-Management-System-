@@ -78,6 +78,14 @@ def assignGrades():
                 print("Fail")
                 break
 
+def searchStudent():
+    name = input("Enter the student name to search")
+    found = 0
+
+    for student in student_records:
+        if student['Name'] == name:
+            found = 1
+
 
 
     
