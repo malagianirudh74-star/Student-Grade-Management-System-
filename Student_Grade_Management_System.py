@@ -109,6 +109,12 @@ def removeStudent():
 
             del student
 
+            print("Student record removed successfully")
+            break
+
+        if found = 0:
+            print("Student not Found")
+
 
 
     
