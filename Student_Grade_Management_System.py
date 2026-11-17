@@ -94,6 +94,21 @@ def searchStudent():
 
             break
 
+def removeStudent():
+    if len(student_records) == 0:
+        print("No student records found")
+        return
+
+    name = input("Enter Student name to delete: ")
+    
+    found = 0
+
+    for student in student_records:
+        if student['Name'] == name:
+            found = 1
+
+            del student
+
 
 
     
