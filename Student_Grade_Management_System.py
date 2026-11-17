@@ -107,13 +107,13 @@ def removeStudent():
         if student['Name'] == name:
             found = 1
 
+            del student
+
             print("Student record removed successfully")
-            
             break
 
         if found = 0:
             print("Student not Found")
-
 
 
     
