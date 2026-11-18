@@ -107,7 +107,7 @@ def removeStudent():
         if student['Name'] == name:
             found = 1
 
-            del student
+            student_records.remove(student)
 
             print("Student record removed successfully")
             break
