@@ -1,4 +1,4 @@
-#function to add the student details
+#function to add the student details (name, marks in PCM)
 def addStudent():
     name = input("Enter the Student name: ")
     marks = []
