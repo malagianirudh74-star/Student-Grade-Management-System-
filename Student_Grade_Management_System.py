@@ -1,3 +1,4 @@
+#function to add the student 
 def addStudent():
     name = input("Enter the Student name: ")
     marks = []
